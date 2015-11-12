@@ -1,0 +1,24 @@
+{
+  "name": "gobelins-app",
+  "version": "0.0.1",
+  "description": "Gobelins school application to find another Gobelins around the world",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "budo src/main.js --serve build/js/app.js --dir ./public --open --live -- -t aliasify",
+    "prod": "browserify -t aliasify src/main.js | uglifyjs -o public/build/js/app.js",
+    "setup": "npm install -g browserify uglify",
+  },
+  "keywords": [
+    "gobelins"
+  ],
+  "author": "Adrien Lavisiera & Jerem Boo",
+  "license": "ISC",
+  "devDependencies": {
+    "aliasify": "^1.8.0",
+    "browserify": "^12.0.1",
+    "budo": "^6.0.4",
+    "uglify": "^0.1.5"
+  },
+  "aliasify": "./src/config/aliasifyConfig.js"
+}
