@@ -1,4 +1,9 @@
-## Starter ES6: React / Backbone / Browserify
+## Starter ES6: React / Stylus / Backbone / Browserify
 
 ### First lunch
-`npm run setup` & `npm start`
+Installation needed for compilation:
+`npm install -g browserify uglify stylus` 
+
+Tasks for js: `npm budo`
+
+Tasks for style: `npm stylus`

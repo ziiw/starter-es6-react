@@ -1,4 +1,5 @@
-var Utils = require("utils");
+import {Utils as Utils} from "./utils";
 
 Utils.hello();
-console.log("hi !");
+Utils.ya();
+console.log("dfsdsad");

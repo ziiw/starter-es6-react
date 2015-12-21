@@ -1,24 +1,24 @@
 {
   "name": "starter-es6",
   "version": "0.0.1",
-  "description": "",
+  "description": "dfsd",
   "main": "src/main.js",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "budo src/main.js --serve build/js/app.js --dir ./public --open --live -- -t aliasify",
-    "prod": "browserify -t aliasify src/main.js | uglifyjs -o public/build/js/app.js",
-    "setup": "npm install -g browserify uglify"
+    "start": "npm run stylus && npm run budo",
+    "budo": "budo src/main.js:build/js/app.js --live --dir ./public --open -- -t [babelify aliasify]",
+    "stylus" : "stylus -w src/stylus/main.styl -o public/build/css/style.css",
+    "prod": "browserify -t aliasify src/main.js | uglifyjs -o public/build/js/app.js"
   },
-  "keywords": [
-    ""
-  ],
   "author": "Adrien Lavisiera",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "aliasify": "^1.8.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
     "budo": "^6.0.4",
+    "onchange": "^2.0.0",
     "uglify": "^0.1.5"
   },
   "aliasify": "./src/config/aliasifyConfig.js"

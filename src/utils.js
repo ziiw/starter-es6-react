@@ -1,7 +1,10 @@
-var Utils = {
-	hello: function(){
-		console.log("Utils here !");
-	}
-}
+export let Utils = {
+	
+	hello: () => {
+		console.log("hello");
+	},
 
-module.exports = Utils;
+	ya: () => {
+		console.log("yaaa");
+	}
+};
