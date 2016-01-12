@@ -1,25 +1,29 @@
 {
   "name": "starter-es6",
   "version": "0.0.1",
-  "description": "dfsd",
+  "description": "Starter Backbone / React / Browserify",
   "main": "src/main.js",
   "scripts": {
     "start": "npm run stylus && npm run budo",
-    "budo": "budo src/main.js:build/js/app.js --live --dir ./public --open -- -t [babelify aliasify]",
-    "stylus" : "stylus -w src/stylus/main.styl -o public/build/css/style.css",
-    "prod": "browserify -t aliasify src/main.js | uglifyjs -o public/build/js/app.js"
+    "budo": "budo src/main.js:build/js/app.js --live --dir ./public --open -- -t [babelify --presets [ es2015 react ] aliasify]",
+    "stylus": "stylus -w src/stylus/main.styl -o public/build/css/style.css",
+    "prod": "browserify -t babelify reactify aliasify src/main.js | uglifyjs -o public/build/js/app.js"
   },
-  "author": "Adrien Lavisiera",
+  "author": "Adrien Lavisiera <adrienl@outlook.com>",
   "license": "MIT",
   "devDependencies": {
     "aliasify": "^1.8.0",
-    "babel-preset-es2015": "^6.1.18",
-    "babel-preset-react": "^6.1.18",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
     "budo": "^6.0.4",
     "onchange": "^2.0.0",
     "uglify": "^0.1.5"
   },
-  "aliasify": "./src/config/aliasifyConfig.js"
+  "aliasify": "./src/config/aliasifyConfig.js",
+  "dependencies": {
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  }
 }
