@@ -1,4 +1,4 @@
-## Starter ES6: React / Stylus / Backbone / Browserify
+## Starter ES6: React / Stylus / Browserify
 
 ### Why ?
 Yes I know it's another JS starter, but I needed a starter for my projects, a starter that I know perfectly how it works, with my habits etc... If you like the way I do, don't be shy and use it ;). I will be gracefull :D.
