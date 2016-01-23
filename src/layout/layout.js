@@ -11,14 +11,16 @@ import { Router, Route, browserHistory, Link } from 'react-router';
 // -----------------------------
 // Core
 
-export default class User extends React.Component {
+export default class Layout extends React.Component {
 
-  render() {
-    return (
-    	<div>
-      		<h1>User</h1>
-      		<Link to='/'>Home</Link>
-      	</div>
-    );
-  }
+	render() {
+
+		// {this.props.children}
+		// To render the component required by the routing
+		return (
+			<div id="layout">
+				{this.props.children}
+		  	</div>
+		);
+	}
 }

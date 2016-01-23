@@ -1,7 +1,7 @@
 // -----------------------------
 // Imports
 
-import {Utils as Utils} from "../utils";
+import {Utils as Utils} from "../../utils";
 import React from "react";
 import { Router, Route, browserHistory, Link } from 'react-router';
 
@@ -15,9 +15,9 @@ export default class Home extends React.Component {
 
   render() {
     return (
-    	<div>
+    	<div id="home">
       		<h1>Home</h1>
-      		<Link to='/users'>User</Link>
+      		<Link to='/users'>Users</Link>
       	</div>
     );
   }
