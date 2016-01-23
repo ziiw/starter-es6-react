@@ -4,6 +4,7 @@
 import {Utils as Utils} from "./utils";
 import React from "react";
 import ReactDOM from "react-dom";
+import Root from "./router";
 
 
 
@@ -19,6 +20,6 @@ window.React = React;
 // Render
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <Root />,
   document.getElementById('app')
 );

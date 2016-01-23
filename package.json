@@ -4,7 +4,7 @@
   "description": "Starter Backbone / React / Browserify",
   "main": "src/main.js",
   "scripts": {
-    "start": "npm run stylus && npm run budo",
+    "start": "npm run stylus & npm run budo",
     "budo": "budo src/main.js:build/js/app.js --live --dir ./public --open -- -t [babelify --presets [ es2015 react ] aliasify]",
     "stylus": "stylus -w src/stylus/main.styl -o public/build/css/style.css",
     "prod": "browserify -t babelify reactify aliasify src/main.js | uglifyjs -o public/build/js/app.js"
@@ -23,7 +23,9 @@
   },
   "aliasify": "./src/config/aliasifyConfig.js",
   "dependencies": {
+    "history": "^1.17.0",
     "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "react-dom": "^0.14.6",
+    "react-router": "^1.0.3"
   }
 }
