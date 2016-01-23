@@ -10,10 +10,11 @@ I don't use tasks runners because I don't really need them. I used to use Gulp f
 Installation needed for compilation:
 `npm install -g browserify uglify stylus` 
 
-Tasks for js: `npm start`
+Run:
+`npm start`
 
 ### Todo
-* Html templatinwg
-* React Router (WIP)
-* Observables (RxJS || Bacon.JS || ...)
+* Stylus minimal configuration :soon:
+* React Router :soon:
 * Flux branch
+* Observables (RxJS || Bacon.JS || ...)
