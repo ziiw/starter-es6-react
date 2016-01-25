@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run stylus & npm run budo",
     "budo": "budo src/main.js:build/js/app.js --live --dir ./public --open -- -t [babelify --presets [ es2015 react ] aliasify]",
-    "stylus": "stylus -w src/stylus/main.styl -o public/build/css/style.css",
+    "stylus": "stylus -w src/stylus/main.styl -u autoprefixer-stylus -o public/build/css/style.css",
     "prod": "browserify -t babelify reactify aliasify src/main.js | uglifyjs -o public/build/js/app.js"
   },
   "author": "Adrien Lavisiera <adrienl@outlook.com>",
