@@ -15,13 +15,18 @@ Installation needed for compilation:
 npm install -g browserify uglify stylus autoprefixer-stylus
 ```
 
+Install modules:
+``` sh
+npm install
+```
+
 Run:
 ``` sh
 npm start
 ```
 
 ### Todo
-* Stylus minimal configuration :soon:
-* React Router :soon:
-* Flux branch
+* Stylus minimal configuration :white_check_mark:
+* React Router :white_check_mark:
+* Redux branch 
 * Observables (RxJS || Bacon.JS || ...)
