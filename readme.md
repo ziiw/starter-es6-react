@@ -1,4 +1,6 @@
-![alt tag](https://github.com/ziiw/starter-es6-react/blob/master/piece_of_cake-02.jpg)
+<p align="center">
+  <img src="https://github.com/ziiw/starter-es6-react/blob/master/piece_of_cake-02.jpg" />
+</p>
 ## Starter ES6: React / Stylus / Browserify
 
 ### Why ?
