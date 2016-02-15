@@ -27,14 +27,14 @@ import Users from './views/users/users';
 
 export default class Root extends React.Component {
 
-  render() {
-    return (
-      <Router history={browserHistory}>
-        <Route path="/" component={Layout}>
-          <IndexRoute component={Home} />
-          <Route path="users" component={Users} />
-        </Route>
-      </Router>
-    );
-  }
+    render() {
+        return (
+            <Router history={browserHistory}>
+                <Route path="/" component={Layout}>
+                    <IndexRoute component={Home} />
+                    <Route path="users" component={Users} />
+                </Route>
+            </Router>
+        );
+    }
 }
