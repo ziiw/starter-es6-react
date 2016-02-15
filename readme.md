@@ -21,14 +21,12 @@ npm install
 ```
 
 ### Start
-Run:
 ``` sh
 npm start
 ```
 It start the budo server, watch your styles and javascript files.
 
 ### Deploy
-Run:
 ``` sh
 npm run build
 ```
