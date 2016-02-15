@@ -1,3 +1,4 @@
+![alt tag](https://github.com/ziiw/starter-es6-react/blob/master/piece_of_cake-02.jpg)
 ## Starter ES6: React / Stylus / Browserify
 
 ### Why ?
