@@ -13,12 +13,26 @@ import { Router, Route, browserHistory, Link } from 'react-router';
 
 export default class Users extends React.Component {
 
-  render() {
-    return (
-    	<div id="users">
-      		<h1>Users</h1>
-      		<Link to='/'>Home</Link>
-      	</div>
-    );
-  }
+	constructor(props) {
+		super(props);
+	}
+
+	componentDidMount() {
+		// Component appear
+		console.info("[Users] - starting");
+	}
+
+	componentWillUnmount() {
+		// Before leaving
+		console.info("[Users] - closing");
+	}
+
+	render() {
+		return (
+			<div id="users">
+		  		<h1>Users</h1>
+		  		<Link to='/'>Home</Link>
+		  	</div>
+		);
+	}
 }
