@@ -1,2 +1,14 @@
+# OSX
+​
+.DS_Store
+._*
+​
+# Build
+​
+public/build/css/
+public/build/js/
+​
+# NPM
+​
 node_modules/
-public/build/
+npm-debug.log
